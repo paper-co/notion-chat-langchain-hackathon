@@ -64,7 +64,7 @@ export default function Home() {
       <Layout>
         <section className="container max-w-xl mx-auto pt-4 pb-6 md:pt-8 md:pb-10 lg:pt-10 lg:pb-16">
           <div className="mx-auto flex flex-col gap-4">
-            <h1 className="text-2xl font-bold leading-[1.1] tracking-tighter text-center mb-3">
+            <h1 className="text-blue-800 text-2xl font-bold leading-[1.1] tracking-tighter text-center mb-3">
               Chat With Paper Notion Docs
             </h1>
             <div className="flex w-full max-w-xl items-center space-x-2">
