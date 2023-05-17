@@ -79,11 +79,9 @@ Simple.
 
 
 ## Screenshots
+![Screen Shot 2023-05-17 at 2 22 12 PM](https://github.com/paper-co/notion-chat-langchain-hackathon/assets/25120457/1bd4a8a6-41de-4047-9a5f-f1ca55522bb2)
 
-![Screen Shot 2023-05-17 at 11 08 49 AM](https://github.com/paper-co/notion-chat-langchain-hackathon/assets/25120457/20e5da07-0605-462b-887e-d6c37c4b9e1e)
 
-### Search Return
-![Screen Shot 2023-05-17 at 11 09 40 AM](https://github.com/paper-co/notion-chat-langchain-hackathon/assets/25120457/470e3fd0-07b0-4264-8c2e-2cfc86d0158b)
 
 ## Deployment
 
