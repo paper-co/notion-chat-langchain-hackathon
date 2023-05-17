@@ -38,7 +38,9 @@ PINECONE_INDEX_NAME=
 
 ## 🧑 Instructions for ingesting your own dataset
 
-### Your Pinecone index should should be Metric type 'cosine' with the Dimensions of 1536, or it will not work.
+### Your Pinecone index should should be Metric type 'cosine' with the Dimensions of 1536, or it will not work. As follows - 
+![Screen Shot 2023-05-17 at 11 18 46 AM](https://github.com/paper-co/notion-chat-langchain-hackathon/assets/25120457/9ab09a7c-22fe-4827-a8cc-5ba368efde77)
+
 
 Export your dataset from Notion. You can do this by clicking on the three dots in the upper right hand corner and then clicking `Export`.
 
