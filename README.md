@@ -24,13 +24,16 @@ pnpm install
 
 ```
 OPENAI_API_KEY=
-
 PINECONE_API_KEY=
 PINECONE_ENVIRONMENT=
+PINECONE_INDEX_NAME=
 
 ```
 
 - Visit [openai](https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key) and [pinecone](https://www.pinecone.io/) to retrieve API keys and insert into your `.env` file.
+
+
+### This step no longer applies as Riley put it in the env file on 5-17-23
 
 4. In the `config` folder, go into `pinecone-index.ts` and replace `PINECONE_INDEX_NAME` with the index name in your pinecone dashboard.
 
