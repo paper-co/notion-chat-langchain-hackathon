@@ -38,6 +38,8 @@ PINECONE_INDEX_NAME=
 
 ## 🧑 Instructions for ingesting your own dataset
 
+### Your Pinecone index should should be Metric type 'cosine' with the Dimensions of 1536, or it will not work.
+
 Export your dataset from Notion. You can do this by clicking on the three dots in the upper right hand corner and then clicking `Export`.
 
 Follow these Notion instructions: [Exporting your content](https://www.notion.so/help/export-your-content)
