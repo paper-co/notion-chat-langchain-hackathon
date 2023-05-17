@@ -74,6 +74,14 @@ Use the search bar to ask a question about your docs.
 
 Simple.
 
+
+## Screenshots
+
+![Screen Shot 2023-05-17 at 11 08 49 AM](https://github.com/paper-co/notion-chat-langchain-hackathon/assets/25120457/20e5da07-0605-462b-887e-d6c37c4b9e1e)
+
+### Search Return
+![Screen Shot 2023-05-17 at 11 09 40 AM](https://github.com/paper-co/notion-chat-langchain-hackathon/assets/25120457/470e3fd0-07b0-4264-8c2e-2cfc86d0158b)
+
 ## Deployment
 
 You can deploy this app to the cloud with [Vercel](https://vercel.com) ([Documentation](https://nextjs.org/docs/deployment)).
