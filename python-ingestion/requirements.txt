@@ -1,0 +1,7 @@
+langchain
+tiktoken
+openai
+urllib3==1.26.6
+unstructured
+pinecone-client
+python-dotenv
