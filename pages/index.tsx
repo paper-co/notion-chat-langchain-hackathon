@@ -65,7 +65,7 @@ export default function Home() {
         <section className="container max-w-xl mx-auto pt-4 pb-6 md:pt-8 md:pb-10 lg:pt-10 lg:pb-16">
           <div className="mx-auto flex flex-col gap-4">
             <div className="flex justify-center">
-              <img src="docugami.png" alt="Docugami Logo" className="w-48 h-48 object-contain object-center object-top"></img>
+              <img src="/docugami.png" alt="Docugami Logo" className="w-48 h-48 object-contain object-center object-top"></img>
   </div>
 
             <h1 className="text-blue-800 text-2xl font-bold leading-[1.1] tracking-tighter text-center mb-3">
