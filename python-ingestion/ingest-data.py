@@ -26,7 +26,6 @@ def get_texts_from_markdown():
     return texts
 
 
->>>>>>> origin/main
 def embed_and_store_texts(texts, index_name):
     embeddings = OpenAIEmbeddings(openai_api_key=OPENAI_API_KEY)
 
