@@ -1,25 +1,30 @@
+import glob
+import pinecone
+import os
 from langchain.document_loaders import UnstructuredMarkdownLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores import Pinecone
 from langchain.embeddings.openai import OpenAIEmbeddings
-import pinecone
-from dotenv import load_dotenv
-import os
-load_dotenv('../.env')
+from decouple import AutoConfig
 
-OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
-PINECONE_API_KEY = os.getenv('PINECONE_API_KEY')
-PINECONE_ENVIRONMENT = os.getenv('PINECONE_ENVIRONMENT')
-PINECONE_INDEX_NAME = os.getenv("PINECONE_INDEX_NAME")
-markdown_path = "../Notion_DB/Acquire Squad 6877998bca2c4a17acc9868e66704e0e.md"
+config = AutoConfig(search_path='../')
 
-def get_texts_from_markdown(markdown_path):
-    loader = UnstructuredMarkdownLoader(markdown_path)
-    data = loader.load()
-    text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
-    texts = text_splitter.split_documents(data)
-    print (f'We have {len(texts)} documents in our dataset.')
+
+OPENAI_API_KEY = config('OPENAI_API_KEY')
+PINECONE_API_KEY = config('PINECONE_API_KEY')
+PINECONE_ENVIRONMENT = config('PINECONE_ENVIRONMENT')
+PINECONE_INDEX_NAME = config("PINECONE_INDEX_NAME")
+
+
+def get_texts_from_markdown():
+    for i in glob.glob("../Notion_DB/*.md"):
+        loader = UnstructuredMarkdownLoader(i)
+        data = loader.load()
+        text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
+        texts = text_splitter.split_documents(data)
+        print (f'We have {len(texts)} documents in our dataset.')
     return texts
+
 
 def embed_and_store_texts(texts, index_name):
     embeddings = OpenAIEmbeddings(openai_api_key=OPENAI_API_KEY)
@@ -36,5 +41,5 @@ def embed_and_store_texts(texts, index_name):
 
 
 if __name__ == "__main__":
-    texts = get_texts_from_markdown(markdown_path)
+    texts = get_texts_from_markdown()
     embed_and_store_texts(texts, PINECONE_INDEX_NAME)
