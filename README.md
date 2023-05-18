@@ -38,7 +38,7 @@ PINECONE_INDEX_NAME=
 
 ## 🧑 Instructions for ingesting your own dataset
 
-### Your Pinecone index should should be Metric type 'cosine' with the Dimensions of 1536, or it will not work. As follows - 
+### Your Pinecone index should should be Metric type 'cosine' with the Dimensions of 1536, or it will not work. As follows -
 ![Screen Shot 2023-05-17 at 11 18 46 AM](https://github.com/paper-co/notion-chat-langchain-hackathon/assets/25120457/9ab09a7c-22fe-4827-a8cc-5ba368efde77)
 
 
@@ -79,8 +79,14 @@ Simple.
 
 
 ## Screenshots
-![Screen Shot 2023-05-17 at 2 22 12 PM](https://github.com/paper-co/notion-chat-langchain-hackathon/assets/25120457/1bd4a8a6-41de-4047-9a5f-f1ca55522bb2)
+![Screen Shot 2023-05-18 at 2 02 48 PM](https://github.com/paper-co/notion-chat-langchain-hackathon/assets/25120457/9784e84e-fcf5-47ab-93eb-7e85369eb9ec)
 
+## Tailwind notes for DevOps/non front end folks
+Always put images in the public folder located in this repo. You can view the docugami.png code as a reference. You can also always
+extend the theme within the [tailwind.config.cjs](https://github.com/paper-co/notion-chat-langchain-hackathon/blob/main/tailwind.config.cjs) to
+add more things like a background image, or edit.
+
+If you need to add a css class you can edit [base.css](https://github.com/paper-co/notion-chat-langchain-hackathon/blob/main/styles/base.css)
 
 
 ## Deployment
