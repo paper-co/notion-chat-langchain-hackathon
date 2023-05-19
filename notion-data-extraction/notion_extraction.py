@@ -139,19 +139,6 @@ if __name__ == '__main__':
     #page_id = '8983f31939254c76af1858c0e141dc0f' # Internal Customization Tool
     page_id = '6877998bca2c4a17acc9868e66704e0e' # Acquire Squad
     get_page_from_api(page_id, debugging_data=True)
-    #block_id = "8983f319-3925-4c76-af18-58c0e141dc0f" # page
-    #block_id = "927ad88d-2bfa-4936-810f-916b000dc9d2" # colum_list
-    #block_id = "a50f3fde-09d2-453c-9569-be295663fdc3" # column
-    #block_id = "93a99699-ef68-47d1-ba7b-8499197e2a95" # column_list
-    #block_id = "3fa87dd3-5849-4073-867d-4dfdf93f2c32" # column (this is the one that has children with their data)
 
-    #block_id = "56ec988d-af86-462f-88e6-7e49618aa3ce" # callout --> this one I can get data from: callout/rich_text[0]/plain_text
-    #block_id = "f2ae5d8a-5de4-4967-981d-c276cfea6616" # callout  "       "       "         "
-    #block_id = "31e464cc-c3c9-42ea-a300-defc54926400" # paragraph  "       "       "         "  : paragraph/rich_text[0]/plain_text
-
-    block_id = "fd3b96f2-4e73-4464-ab6e-1ea79b894586"
-
-    #block_data = get_block_data_from_api(block_id, "table", debugging_data=True)
-    #print(block_data)
 
 
