@@ -1,5 +1,5 @@
 # Docugami - a ChatBot for Your Notion Knowledge Base
-<img src="https://github.com/paper-co/notion-chat-langchain-hackathon/assets/25120457/6729c3d1-e0c6-47ca-9df7-bf13b90f4758" width="75%"></img> 
+<img src="https://github.com/paper-co/notion-chat-langchain-hackathon/assets/25120457/6729c3d1-e0c6-47ca-9df7-bf13b90f4758" width="75%"></img>
 
 
 Create a simple chatbot for question-answering your Notion knowledge base/docs using Openai, Typescript, LangChain and Pinecone.
@@ -115,6 +115,7 @@ The script receives a Notion page ID and extracts all of its content, as well as
   - [ ] Tie in the python script to automatically populate the Markdown data, and trigger typescript to ingest it.
   - [ ] Retrieve only pages which have been edited since the last extraction
   - [ ] Possible pure TS implementation for notion extraction?
+  - [ ] Export/ingest all data from Initiatives page
 
 ## Credit
 
