@@ -27,7 +27,7 @@ def get_page_from_api(page_id, folder_path="", debugging_data=False):
             if prop['type'] == 'title':
                 page_title = prop['title'][0]['plain_text']
 
-        page_folder_name = page_title.replace(" ", "_")
+        page_folder_name = page_title.replace(" ", "_").replace("/", "_")
         if folder_path != "":
             page_folder_name = os.path.join(folder_path, page_folder_name)
         print(f"Creating folder {page_folder_name} for page {page_title} with page id {page_id}...")
