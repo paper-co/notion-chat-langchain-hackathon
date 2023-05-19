@@ -8,7 +8,8 @@ Create a simple chatbot for question-answering your Notion knowledge base/docs u
 
 ## 📊 Example Data
 
-Example data can be exported from notion as Markdown/CSV with 'everything including subpages' selected; or you can use the Pinecode Index we've already populated for instructional purposes. Please message Riley or Eduardo for Pinecone API access.
+Example data can be exported from notion as Markdown/CSV with 'everything including subpages' selected; or you can use the Pinecode Index we've already populated for instructional purposes. Please message Riley or Eduardo for Pinecone 
+information to the demo index.
 
 ## Development
 
