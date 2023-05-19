@@ -69,7 +69,7 @@ export default function Home() {
   </div>
 
             <h1 className="text-blue-800 text-2xl font-bold leading-[1.1] tracking-tighter text-center mb-3">
-              Chat With Notion Docs @ Paper
+              Chat With Notion Docs @Paper
             </h1>
             <div className="flex w-full max-w-xl items-center space-x-2">
               <input
