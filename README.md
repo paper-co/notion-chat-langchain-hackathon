@@ -1,4 +1,4 @@
-# A ChatBot for Your Notion Knowledge Base, Docugami
+# Docugami - a ChatBot for Your Notion Knowledge Base
 <img src="https://github.com/paper-co/notion-chat-langchain-hackathon/assets/25120457/6729c3d1-e0c6-47ca-9df7-bf13b90f4758" width="75%"></img> 
 
 
