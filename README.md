@@ -1,4 +1,6 @@
-# A ChatBot for Your Notion Knowledge Base
+# A ChatBot for Your Notion Knowledge Base, Docugami
+<img src="https://github.com/paper-co/notion-chat-langchain-hackathon/assets/25120457/6729c3d1-e0c6-47ca-9df7-bf13b90f4758" width="75%"></img> 
+
 
 Create a simple chatbot for question-answering your Notion knowledge base/docs using Openai, Typescript, LangChain and Pinecone.
 
