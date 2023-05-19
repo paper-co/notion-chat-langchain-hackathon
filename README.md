@@ -8,7 +8,7 @@ Create a simple chatbot for question-answering your Notion knowledge base/docs u
 
 ## 📊 Example Data
 
-This repo uses a Notion template of the support docs from [cron](https://cronhq.notion.site/Cron-Calendar-5625be54feac4e13a75b10271b65ddb7) - a next-generation calendar for professionals and teams
+Example data can be exported from notion as Markdown/CSV with 'everything including subpages' selected; or you can use the Pinecode Index we've already populated for instructional purposes. Please message Riley or Eduardo for Pinecone API access.
 
 ## Development
 
@@ -99,21 +99,22 @@ You can deploy this app to the cloud with [Vercel](https://vercel.com) ([Documen
 
 This module offers an automated and customizable way to extract data from Notion. It’s written in Python so it can be easily used to schedule and orchestrate periodic data extraction with Airflow, for example, which offers a UI to monitor data extraction status, as well as important mechanisms such as auto-retry, in case the Notion API is not available or we reach some API limit.
 
-#### **What has been done so far:**
+#### What has been done so far
 The script receives a Notion page ID and extracts all of its content, as well as its sub-pages content, creating a folder hierarchy that represents the pages hierarchy. It also formats the output in Markdown, so the final files are .md files.
 
-#### **How to execute it:**
+#### How to execute it
   - go to folder `notion-data-extraction`
   - create and activate a Python virtual env
   - install the dependencies in the virtual env, from the requirements.txt file
   - edit file notion_extraction.py to add the id of your root Notion page at the end of the file in variable page_id (TODO: receive this as a parameter instead)
   - run python notion_extraction.py from this folder (or from the folder you want the data to be stored, adjusting the path of the python script)
 
-#### **What needs to be done yet:**
-  - retrieve people’s names from page properties (e.g. Squads’ PM)
-  - retrieve data and pages from pages’s children databases
-  - retrieve only pages which have been edited since the last extraction
-  - ???
+### TODO
+  - [ ] Retrieve people’s names from page properties (e.g. Squads’ PM)
+  - [ ] Retrieve data and pages from pages’s children databases
+  - [ ] Tie in the python script to automatically populate the Markdown data, and trigger typescript to ingest it.
+  - [ ] Retrieve only pages which have been edited since the last extraction
+  - [ ] Possible pure TS implementation for notion extraction?
 
 ## Credit
 
