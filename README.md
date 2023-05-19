@@ -93,6 +93,26 @@ If you need to add a css class you can edit [base.css](https://github.com/paper-
 
 You can deploy this app to the cloud with [Vercel](https://vercel.com) ([Documentation](https://nextjs.org/docs/deployment)).
 
+## Notion Extraction Module (Python)
+
+This module offers an automated and customizable way to extract data from Notion. It’s written in Python so it can be easily used to schedule and orchestrate periodic data extraction with Airflow, for example, which offers a UI to monitor data extraction status, as well as important mechanisms such as auto-retry, in case the Notion API is not available or we reach some API limit.
+
+#### **What has been done so far:**
+The script receives a Notion page ID and extracts all of its content, as well as its sub-pages content, creating a folder hierarchy that represents the pages hierarchy. It also formats the output in Markdown, so the final files are .md files.
+
+#### **How to execute it:**
+  - go to folder `notion-data-extraction`
+  - create and activate a Python virtual env
+  - install the dependencies in the virtual env, from the requirements.txt file
+  - edit file notion_extraction.py to add the id of your root Notion page at the end of the file in variable page_id (TODO: receive this as a parameter instead)
+  - run python notion_extraction.py from this folder (or from the folder you want the data to be stored, adjusting the path of the python script)
+
+#### **What needs to be done yet:**
+  - retrieve people’s names from page properties (e.g. Squads’ PM)
+  - retrieve data and pages from pages’s children databases
+  - retrieve only pages which have been edited since the last extraction
+  - ???
+
 ## Credit
 
 This repo is inspired by [notion-qa](https://github.com/hwchase17/notion-qa)
